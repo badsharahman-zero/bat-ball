@@ -10,33 +10,51 @@
             margin: 0;
         }
         .bat{
-            height: 300px;
-            width: 300px;
+            width: 25%;
             float: right;
             transition: transform 0.2s ease-in-out;
-            margin: 100px;
+            margin: 5%;
         }
         .field:hover .bat{
             transform: rotate(80deg);
             transform-origin: left top;
         }
         .ball{
-            height: 50px;
-            width: 50px;
+            width: 5%;
             position: relative;
-            left: 700px;
-            top: 372px;
+            left: 639px;
+            top: 374px;
             transition: transform 0.3s ease-in-out 0.3s;
         }
         .field:hover .ball{
-            transform: translate(-700px, -370px);
+            transform: translate(-637px, -370px);
         }
         .arrow{
             height: 50px;
-            width: 80px;
+            width: 7%;
             position: relative;
-            left: 585px;
-            top: 550px;
+            left: 40%;
+            top: 530px;
+        }
+        @media only screen and (max-width: 360px) {
+            .bat{
+                width: 40%;
+            }
+            .ball{
+                width: 6%;
+                left: 77px;
+                top: 139px;
+                transition: transform 0.2s ease-in-out 0.3s;
+            }
+            .arrow{
+                height: 25px;
+                width: 8%;
+                left: 130px;
+                top: 190px;
+            }
+            .field:hover .ball {
+                transform: translate(-74px, -140px);
+            }
         }
     </style>
 </head>
